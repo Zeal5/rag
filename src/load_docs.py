@@ -40,6 +40,7 @@ def _create_chunks(documents):
 
 
 def _create_embeddings(model: BGEM3FlagModel, chunks, vector_db_dir: str):
+    os.makedirs(vector_db_dir, exist_ok=True)
     embeddings = model.encode(
         chunks,
         batch_size=int(os.getenv("batch_size") or 12),
@@ -63,8 +64,6 @@ def get_document_chunks(source_file_dir: str):
 
 
 def create_vector_db(model: BGEM3FlagModel, source_file_dir, vector_db_dir):
-    # doc = _load_files_from_dir(source_file_path)
-    # chunks = _create_chunks(doc)
 
     chunks = get_document_chunks(source_file_dir)
     _create_embeddings(model, chunks, vector_db_dir)
