@@ -6,7 +6,7 @@ To store vector databases [faiss](https://github.com/facebookresearch/faiss)
 For documentation loadind [LangChain Document Loader](https://python.langchain.com/v0.1/docs/modules/data_connection/document_loaders/)
 Optional Dependency [Marker](https://github.com/VikParuchuri/marker) Is used to convert pdf -> md.
 
-## Install Marker:
+## Install Marker (Optional)
     `uv pip install marker-pdf`
     `pip install marker-pdf[full]` (if conversion from any other format is reuired)
     
@@ -24,9 +24,10 @@ Optional Dependency [Marker](https://github.com/VikParuchuri/marker) Is used to 
     `git clone https://github.com/Zeal5/rag.git`
 
 ### Install uv
-    Linux | macOS `curl -LsSf https://astral.sh/uv/install.sh | sh`
-    Windows `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
-    From PyPi
+Linux | macOS   `curl -LsSf https://astral.sh/uv/install.sh | sh`
+Windows 
+    `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+From PyPi
     `pip install uv`
     
 ### Install Rag
