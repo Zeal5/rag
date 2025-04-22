@@ -24,7 +24,7 @@ Optional Dependency [Marker](https://github.com/VikParuchuri/marker) Is used to 
     `git clone https://github.com/Zeal5/rag.git`
 
 ### Install uv
-Linux | macOS   `curl -LsSf https://astral.sh/uv/install.sh | sh`
+Linux | macOS   ```curl -LsSf https://astral.sh/uv/install.sh | sh```
 Windows 
     `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
 From PyPi
