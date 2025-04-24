@@ -24,4 +24,4 @@ def get_related_chunks(
     query_embedding = np.array(query_embedding).astype("float32").reshape(1, -1)
 
     D, I = index.search(np.array(query_embedding).astype("float32"), k=k)
-    return D, I
+    return D[:k], I[:k]
