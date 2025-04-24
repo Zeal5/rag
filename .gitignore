@@ -11,3 +11,7 @@ wheels/
 .env
 vector_dbs/*
 sourcesPDF/*
+BACKUPS
+BOOKS
+testPrompts.json
+testResults8b.json
